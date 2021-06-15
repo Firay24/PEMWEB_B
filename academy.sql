@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Jun 2021 pada 05.46
+-- Waktu pembuatan: 15 Jun 2021 pada 13.20
 -- Versi server: 10.4.17-MariaDB
 -- Versi PHP: 7.4.13
 
@@ -51,19 +51,17 @@ INSERT INTO `kelas` (`ID`, `judulKelas`, `hargaKelas`, `jenisKelas`, `image`) VA
 CREATE TABLE `pelanggan` (
   `ID` int(5) NOT NULL,
   `nama` varchar(30) NOT NULL,
-  `jeniskelamin` enum('Perempuan','Pria') NOT NULL,
   `username` varchar(15) NOT NULL,
   `password` varchar(50) NOT NULL,
-  `nomerHP` varchar(14) NOT NULL,
-  `alamat` varchar(30) NOT NULL
+  `konfirm` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data untuk tabel `pelanggan`
 --
 
-INSERT INTO `pelanggan` (`ID`, `nama`, `jeniskelamin`, `username`, `password`, `nomerHP`, `alamat`) VALUES
-(2, '', 'Perempuan', 'firay24', 'e7fb283b96d65806fe84f5fd77fc4e10', '085231796284', 'Banyuwangi');
+INSERT INTO `pelanggan` (`ID`, `nama`, `username`, `password`, `konfirm`) VALUES
+(2, '', 'firay24', 'e7fb283b96d65806fe84f5fd77fc4e10', 'e7fb283b96d65806fe84f5fd77fc4e10');
 
 -- --------------------------------------------------------
 

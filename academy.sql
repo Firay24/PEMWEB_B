@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 15 Jun 2021 pada 13.20
--- Versi server: 10.4.17-MariaDB
--- Versi PHP: 7.4.13
+-- Generation Time: Jun 15, 2021 at 01:47 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 7.4.15
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -24,7 +24,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kelas`
+-- Table structure for table `kelas`
 --
 
 CREATE TABLE `kelas` (
@@ -36,7 +36,7 @@ CREATE TABLE `kelas` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `kelas`
+-- Dumping data for table `kelas`
 --
 
 INSERT INTO `kelas` (`ID`, `judulKelas`, `hargaKelas`, `jenisKelas`, `image`) VALUES
@@ -45,28 +45,27 @@ INSERT INTO `kelas` (`ID`, `judulKelas`, `hargaKelas`, `jenisKelas`, `image`) VA
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `pelanggan`
+-- Table structure for table `pelanggan`
 --
 
 CREATE TABLE `pelanggan` (
   `ID` int(5) NOT NULL,
   `nama` varchar(30) NOT NULL,
   `username` varchar(15) NOT NULL,
-  `password` varchar(50) NOT NULL,
-  `konfirm` varchar(50) NOT NULL
+  `password` varchar(50) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `pelanggan`
+-- Dumping data for table `pelanggan`
 --
 
-INSERT INTO `pelanggan` (`ID`, `nama`, `username`, `password`, `konfirm`) VALUES
-(2, '', 'firay24', 'e7fb283b96d65806fe84f5fd77fc4e10', 'e7fb283b96d65806fe84f5fd77fc4e10');
+INSERT INTO `pelanggan` (`ID`, `nama`, `username`, `password`) VALUES
+(2, '', 'firay24', 'e7fb283b96d65806fe84f5fd77fc4e10');
 
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `transaksi`
+-- Table structure for table `transaksi`
 --
 
 CREATE TABLE `transaksi` (
@@ -80,7 +79,7 @@ CREATE TABLE `transaksi` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data untuk tabel `transaksi`
+-- Dumping data for table `transaksi`
 --
 
 INSERT INTO `transaksi` (`ID`, `IDPelanggan`, `IDKelas`, `Jumlah`, `Total`, `Waktu`, `Keterangan`) VALUES
@@ -91,19 +90,19 @@ INSERT INTO `transaksi` (`ID`, `IDPelanggan`, `IDKelas`, `Jumlah`, `Total`, `Wak
 --
 
 --
--- Indeks untuk tabel `kelas`
+-- Indexes for table `kelas`
 --
 ALTER TABLE `kelas`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indeks untuk tabel `pelanggan`
+-- Indexes for table `pelanggan`
 --
 ALTER TABLE `pelanggan`
   ADD PRIMARY KEY (`ID`);
 
 --
--- Indeks untuk tabel `transaksi`
+-- Indexes for table `transaksi`
 --
 ALTER TABLE `transaksi`
   ADD PRIMARY KEY (`ID`),
@@ -111,33 +110,33 @@ ALTER TABLE `transaksi`
   ADD KEY `IDPelanggan` (`IDPelanggan`);
 
 --
--- AUTO_INCREMENT untuk tabel yang dibuang
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT untuk tabel `kelas`
+-- AUTO_INCREMENT for table `kelas`
 --
 ALTER TABLE `kelas`
   MODIFY `ID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `pelanggan`
+-- AUTO_INCREMENT for table `pelanggan`
 --
 ALTER TABLE `pelanggan`
   MODIFY `ID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT untuk tabel `transaksi`
+-- AUTO_INCREMENT for table `transaksi`
 --
 ALTER TABLE `transaksi`
   MODIFY `ID` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- Ketidakleluasaan untuk tabel pelimpahan (Dumped Tables)
+-- Constraints for dumped tables
 --
 
 --
--- Ketidakleluasaan untuk tabel `transaksi`
+-- Constraints for table `transaksi`
 --
 ALTER TABLE `transaksi`
   ADD CONSTRAINT `transaksi_ibfk_1` FOREIGN KEY (`IDKelas`) REFERENCES `kelas` (`ID`),

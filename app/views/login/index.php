@@ -27,7 +27,7 @@
                             </div>
                             <div class="form-group form-button">
                                 <button type="submit" name="signin" id="signin" class="form-submit" style="background-color:black;font-family:Poppins;">
-                                <a href="<?= BASEURL; ?>/register" style="color:white;text-decoration:none">Login</a>
+                                <a href="<?= BASEURL; ?>/landing" style="color:white;text-decoration:none">Login</a>
                                 </button>
                             </div>
                         </form>

@@ -1,3 +1,3 @@
 <?php
 
-define('BASEURL', 'http://localhost/pemweb_test/public');
+define('BASEURL', 'http://localhost/PEMWEB_B/public');

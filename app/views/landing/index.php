@@ -43,7 +43,7 @@
           <h1 data-aos="fade-up">Academy IT</h1>
           <h2 data-aos="fade-up" data-aos-delay="400">Build your learning spirit by learning easy and fun together with Academy IT</h2>
           <div data-aos="fade-up" data-aos-delay="800">
-            <a href="#about" class="btn-get-started scrollto">Explore</a>
+            <a href="<?= BASEURL; ?>/dashboard" class="btn-get-started scrollto">Explore</a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="fade-left" data-aos-delay="200">

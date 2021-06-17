@@ -82,6 +82,12 @@
                 </a>
             </li>
 
+            <li class="nav-item">
+                <a class="nav-link collapsed" href="<?= BASEURL; ?>Logout/logout">
+                    <span>Logout</span>
+                </a>
+            </li>
+
 
         </ul>
         <!-- End of Sidebar -->

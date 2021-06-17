@@ -1,3 +1,9 @@
+    <div class="row">
+        <div class="col-lg-6">
+            <?php Flasher::flash();?>
+        </div>
+    </div>
+
     <div class="main">
         <!-- Sing in  Form -->
         <section class="sign-in">
@@ -9,25 +15,25 @@
 
                     <div class="signin-form">
                         <h2 class="form-title" style="margin-top:15px">Sign in</h2>
-                        <form method="POST" class="register-form" id="login-form">
+                        <form method="POST" class="register-form" id="login-form" action="<?= BASEURL; ?>/Login/login">
                             <div class="form-group">
-                                <label for="your_name"></i></label>
-                                <input type="text" name="your_name" id="your_name" placeholder="Username"/>
+                                <label for="username"></label>
+                                <input type="text" name="username" id="username" placeholder="Username"/>
                             </div>
                             <div class="form-group">
-                                <label for="your_pass"></label>
-                                <input type="password" name="your_pass" id="your_pass" placeholder="Password"/>
+                                <label for="password"></label>
+                                <input type="password" name="password" id="password" placeholder="Password"/>
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="remember-me" id="remember-me" class="agree-term" />
                                 <label for="remember-me" class="label-agree-term"><span><span></span></span>Remember me</label>
                             </div>
                             <div class="form-group">
-                                <a href="<?= BASEURL; ?>/register" class="signup-image-link" style="font-size:13px;margin-left:-170px">Create an account</a>
+                                <a href="<?= BASEURL; ?>/register" class="signup-image-link" style="font-size:13px;">Create an account</a>
                             </div>
                             <div class="form-group form-button">
                                 <button type="submit" name="signin" id="signin" class="form-submit" style="background-color:black;font-family:Poppins;">
-                                <a href="<?= BASEURL; ?>/landing" style="color:white;text-decoration:none">Login</a>
+                                <a style="color:white;text-decoration:none">Login</a>
                                 </button>
                             </div>
                         </form>

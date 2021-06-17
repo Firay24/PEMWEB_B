@@ -1,4 +1,4 @@
     <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="<?= BASEURL; ?>vendor/jquery/jquery.min.js"></script>
 </body>
 </html>

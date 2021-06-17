@@ -29,12 +29,11 @@
                 <!-- Begin Page Content -->
                 <div class="container-fluid">
 
-                <!-- Page Heading -->
-                <div class="d-sm-flex align-items-center justify-content-between mb-4">
-                    <h1 class="h3 mt-5 text-gray-800">Dashboard</h1>
+                    <!-- Page Heading -->
+                    <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                        <h1 class="h3 mt-5 text-gray-800">Dashboard</h1>
+                    </div>
                 </div>
-                </div>
-
 
                 <div class="row">
                     <div class="col-lg-5 ml-5">
@@ -61,6 +60,7 @@
                                 easily modified with no need for any custom CSS!
                             </div>
                         </div>
+
                     </div>
                     <div class="col-lg-5 ml-5">
 

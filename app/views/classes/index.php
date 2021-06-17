@@ -19,24 +19,24 @@
                 <ol class="list-group list-group-numbered">
                     <li class="list-group-item d-flex justify-content-between align-items-start">
                         <div class="ms-2 me-auto">
-                        <div class="fw-bold">Subheading</div>
-                        Cras justo odio
+                            <div class="fw-bold">Sedang Dipelajari</div>
+                            <h5>Pemograman berbasis website menggunakan Laravel</h5>
                         </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
+                        <span ><a href="" class="badge badge-primary">Mulai Belajar</a></span>
                     </li>
                     <li class="list-group-item d-flex justify-content-between align-items-start">
                         <div class="ms-2 me-auto">
-                        <div class="fw-bold">Subheading</div>
-                        Cras justo odio
+                            <div class="fw-bold">Sedang Dipelajari</div>
+                            <h5>Machine learning pemula menggunakan python</h5>
                         </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
+                        <span ><a href="" class="badge badge-primary">Mulai Belajar</a></span>
                     </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-start">
+                    <li class="list-group-item d-flex justify-content-between">
                         <div class="ms-2 me-auto">
-                        <div class="fw-bold">Subheading</div>
-                        Cras justo odio
+                            <div class="fw-bold">Selesai</div>
+                            <h5>Database dengan My SQL</h5>
                         </div>
-                        <span class="badge bg-primary rounded-pill">14</span>
+                        <span ><a href="" class="badge badge-success">Cetak Sertifikat</a></span>
                     </li>
                 </ol>
             </div>

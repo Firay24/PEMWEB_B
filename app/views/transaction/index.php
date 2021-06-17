@@ -26,17 +26,17 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>Pemograman berbasis website menggunakan Laravel</td>
-                                <td>Rp 200000</td>
-                                <td>2021-06-15 00:21:53.000000</td>
-                                <td><a href="" class="badge badge-warning">Belum Bayar</a></td>
-                            </tr>
-                            <tr>
-                                <td>Database dengan My SQL</td>
-                                <td>Rp 150000</td>
-                                <td>2021-06-16 00:21:53.000000</td>
-                                <td><a href="" class="badge badge-success">Lunas</a></td>
-                            </tr>
+                            <?php foreach($data['class'] as $class) : ?>
+                                <tr>
+                                    <td><?= $class['kelas']; ?></td>
+                                    <td><?= $class['harga']; ?></td>
+                                    <td><?= $class['waktu']; ?></td>
+                                    <?php if($class['ket']=='Bayar') :?>
+                                        <td><a href="" class="badge badge-warning"><?= $class['ket']; ?></a></td>
+                                    <?php else: ?>
+                                        <td><a href="" class="badge badge-success"><?= $class['ket']; ?></a></td>
+                                    <?php endif ?>
+                                </tr>
+                            <?php endforeach; ?>
                         </tbody>
 </div>

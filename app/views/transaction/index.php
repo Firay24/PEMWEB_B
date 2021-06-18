@@ -15,6 +15,7 @@
                 <h6 class="m-0 font-weight-bold text-primary">Transaction History</h6>
             </div>
             <div class="card-body">
+                <a class="btn btn-primary mb-3" href="<?= BASEURL; ?>/dashboard" role="button">Tambah kelas</a>
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
@@ -28,13 +29,13 @@
                         <tbody>
                             <?php foreach($data['class'] as $class) : ?>
                                 <tr>
-                                    <td><?= $class['IDKelas']; ?></td>
+                                    <td><?= $class['judulKelas']; ?></td>
                                     <td><?= $class['Total']; ?></td>
                                     <td><?= $class['Waktu']; ?></td>
-                                    <?php if($class['Keterangan']=='bayar') :?>
-                                        <td><a href="" class="badge badge-warning"><?= $class['ket']; ?></a></td>
+                                    <?php if($class['Keterangan']=='Bayar') :?>
+                                        <td><a href="" class="badge badge-warning"><?= $class['Keterangan']; ?></a></td>
                                     <?php else: ?>
-                                        <td><a href="" class="badge badge-success"><?= $class['ket']; ?></a></td>
+                                        <td><a href="" class="badge badge-success"><?= $class['Keterangan']; ?></a></td>
                                     <?php endif ?>
                                 </tr>
                             <?php endforeach; ?>

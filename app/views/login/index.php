@@ -27,7 +27,7 @@
                                 <a href="<?= BASEURL; ?>/register" class="signup-image-link" style="font-size:13px;">Create an account</a>
                             </div>
                             <div class="form-group form-button">
-                                <button type="submit" name="signin" id="signin" class="form-submit" style="background-color:black;font-family:Poppins;">
+                                <button type="submit" name="login" id="signin" class="form-submit" style="background-color:black;font-family:Poppins;">
                                 <a style="color:white;text-decoration:none">Login</a>
                                 </button>
                             </div>

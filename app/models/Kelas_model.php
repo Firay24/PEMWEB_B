@@ -12,10 +12,10 @@ class Kelas_model{
     public function getAllKelas()
     {
         $this->db->query("SELECT * FROM {$this->table}");
-        $this->db->bind('judulKelas', $data['judulKelas']);
-        $this->db->bind('jenisKelas', $data['jenisKelas']);
-        $this->db->bind('hargaKelas', $data['hargaKelas']);
-        $this->db->bind('image', $data['image']);
+        // $this->db->bind('judulKelas', $data['judulKelas']);
+        // $this->db->bind('jenisKelas', $data['jenisKelas']);
+        // $this->db->bind('hargaKelas', $data['hargaKelas']);
+        // $this->db->bind('image', $data['image']);
         return $this->db->resultSet();
     }
 }

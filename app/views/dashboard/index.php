@@ -35,17 +35,17 @@
                     </div>
                 </div>
 
-                <div class="col">
-                    <div class="col-lg-5 ml-5">
+                <div class="row">
+                    <?php foreach ($data['kelas'] as $kelas) : ?>
+                    <div class="col-lg-4 col-sm-6 ml-5">
 
                     <!-- Basic Card Example -->
-                        <?php foreach ($data['kelas'] as $kelas) : ?>
                         <div class="card shadow mb-4 d-flex">
                                 <div class="card-header py-3">
                                     <h6 class="m-0 font-weight-bold text-primary"><?=$kelas['image'] ?></h6>
                                 </div>
                                 <div class="card-body">
-                                    <?=$kelas['judulKelas'] ?>
+                                    <b><?=$kelas['judulKelas'] ?></b>
                                     <br>
                                     <?=$kelas['jenisKelas'] ?>
                                     <br>
@@ -54,7 +54,7 @@
                                     <button type="submit" name="daftar" class="btn bg-primary text-white">Daftar</button>
                                 </div>
                         </div>
-                        <?php endforeach; ?>
 
                     </div>
+                    <?php endforeach; ?>
                 </div>

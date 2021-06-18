@@ -35,56 +35,26 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="col">
                     <div class="col-lg-5 ml-5">
 
                     <!-- Basic Card Example -->
-                        <div class="card shadow mb-4">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Basic Card Example</h6>
-                            </div>
-                            <div class="card-body">
-                                The styling for this basic card example is created by using default Bootstrap
-                                utility classes. By using utility classes, the style of the card component can be
-                                easily modified with no need for any custom CSS!
-                            </div>
+                        <?php foreach ($data['kelas'] as $kelas) : ?>
+                        <div class="card shadow mb-4 d-flex">
+                                <div class="card-header py-3">
+                                    <h6 class="m-0 font-weight-bold text-primary"><?=$kelas['image'] ?></h6>
+                                </div>
+                                <div class="card-body">
+                                    <?=$kelas['judulKelas'] ?>
+                                    <br>
+                                    <?=$kelas['jenisKelas'] ?>
+                                    <br>
+                                    <?=$kelas['hargaKelas'] ?>
+                                    <br>
+                                    <button type="submit" name="daftar" class="btn bg-primary text-white">Daftar</button>
+                                </div>
                         </div>
-                    
-                        <div class="card shadow mb-4">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Basic Card Example</h6>
-                            </div>
-                            <div class="card-body">
-                                The styling for this basic card example is created by using default Bootstrap
-                                utility classes. By using utility classes, the style of the card component can be
-                                easily modified with no need for any custom CSS!
-                            </div>
-                        </div>
+                        <?php endforeach; ?>
 
-                    </div>
-                    <div class="col-lg-5 ml-5">
-
-                    <!-- Basic Card Example -->
-                        <div class="card shadow mb-4">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Basic Card Example</h6>
-                            </div>
-                            <div class="card-body">
-                                The styling for this basic card example is created by using default Bootstrap
-                                utility classes. By using utility classes, the style of the card component can be
-                                easily modified with no need for any custom CSS!
-                            </div>
-                        </div>
-
-                        <div class="card shadow mb-4">
-                            <div class="card-header py-3">
-                                <h6 class="m-0 font-weight-bold text-primary">Basic Card Example</h6>
-                            </div>
-                            <div class="card-body">
-                                The styling for this basic card example is created by using default Bootstrap
-                                utility classes. By using utility classes, the style of the card component can be
-                                easily modified with no need for any custom CSS!
-                            </div>
-                        </div>
                     </div>
                 </div>

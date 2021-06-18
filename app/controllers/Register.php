@@ -11,10 +11,6 @@ class Register extends Controller{
 
     public function register()
     {
-        // $data = $_POST;
-
-        // $credential = $this->model('Akun_model')->getCredential($data['username']);
-
         if ($_POST['password'] != $_POST['re_pass'])
         {
             Flasher::setFlash('Konfirmasi Password', 'Tidak Sama', 'danger');

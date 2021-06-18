@@ -7,9 +7,12 @@
     </div>
     <div class="container">
         <img class="d-inline mr-5" src="<?= BASEURL; ?>/images/profile.png" style="width:20%;">
-        <p class="d-inline">Shafa Cantik</p>
+        <div class="d-inline">
+            <h3><?= $data['pelanggan']['nama']?></h3>
+            <h3><?= $data['pelanggan']['username']?></h3>
+            <h3><?= $data['pelanggan']['password']?></h3>
+        </div>
         <br> <br>
-        <button type="button" class="btn btn-primary">Edit</button>
-        <button type="button" class="btn btn-danger">Delete</button>
+        <button type="button" class="btn btn-primary" href="<?= BASEURL; ?>/profile/edit">Edit</button>
     </div>
 </div>

@@ -1,9 +1,3 @@
-<div class="row">
-    <div class="col-lg-6">
-        <?php Flasher::flash();?>
-    </div>
-</div>
-
 <div class="main">
     <!-- Sign up form -->
     <section class="signup">
@@ -12,6 +6,11 @@
                 <div class="signup-form">
                     <h2 class="form-title">Sign up</h2>
                     <form method="POST" class="register-form" id="register-form" action="<?= BASEURL; ?>/Register/register">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <?php Flasher::flash();?>
+                            </div>
+                        </div>
                         <div class="form-group">
                             <label for="nama"></label>
                             <input type="text" name="nama" id="nama" placeholder="Nama"/>

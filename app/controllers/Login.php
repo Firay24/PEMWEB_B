@@ -22,7 +22,7 @@ class Login extends Controller{
             exit;
         } else {
             Flasher::setFlash('Login', 'Gagal', 'danger');
-            header("Location: " . BASEURL . "/Login/index");
+            header("Location: " . BASEURL);
             exit;
         }
     }

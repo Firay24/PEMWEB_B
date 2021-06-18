@@ -23,11 +23,11 @@ class Profile extends Controller{
     {
         if ($this->model('Akun_model')->update($_POST) > 0)
         {
-            Flasher::setFlash('Profile', 'berhasil dihapus', 'success');
+            Flasher::setFlash('Profile', 'berhasil diubah', 'success');
             header("Location: " . BASEURL . "/Profile/index");
             exit;
         } else{
-            Flasher::setFlash('Profile', 'gagal dihapus', 'danger');
+            Flasher::setFlash('Profile', 'gagal diubah', 'danger');
             header("Location: " . BASEURL . "/Profile/edit");
             exit;
         }

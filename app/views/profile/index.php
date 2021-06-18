@@ -13,6 +13,6 @@
             <h3><?= $data['pelanggan']['password']?></h3>
         </div>
         <br> <br>
-        <button type="button" class="btn btn-primary" href="<?= BASEURL; ?>/profile/edit">Edit</button>
+        <a href="<?= BASEURL; ?>/profile/edit"><button type="button" class="btn btn-primary">Edit</button></a>
     </div>
 </div>

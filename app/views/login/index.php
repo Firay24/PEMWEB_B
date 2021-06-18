@@ -9,7 +9,7 @@
 
                     <div class="signin-form">
                         <h2 class="form-title" style="margin-top:15px">Sign in</h2>
-                        <form method="POST" class="register-form" id="login-form" action="<?= BASEURL; ?>/Login/login">
+                        <form  class="register-form" action="<?= BASEURL; ?>/login/proses_login" method="POST">
                             <div class="row">
                                 <div class="col-lg-6">
                                     <?php Flasher::flash();?>
@@ -27,9 +27,10 @@
                                 <a href="<?= BASEURL; ?>/register" class="signup-image-link" style="font-size:13px;">Create an account</a>
                             </div>
                             <div class="form-group form-button">
-                                <button type="submit" name="login" id="signin" class="form-submit" style="background-color:black;font-family:Poppins;">
+                                <!-- <button type="submit" name="login" id="signin" class="form-submit" style="background-color:black;font-family:Poppins;">
                                 <a style="color:white;text-decoration:none">Login</a>
-                                </button>
+                                </button> -->
+                                <input type="submit" value="Login">
                             </div>
                         </form>
                     </div>

@@ -9,7 +9,7 @@ class Login extends Controller{
         $this->view('templates/footer');
     }
 
-    public function login()
+    public function proses_login()
     {
         $data = $_POST;
         

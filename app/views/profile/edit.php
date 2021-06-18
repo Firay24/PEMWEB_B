@@ -15,16 +15,19 @@
                 </div>
             </div>
             <div class="form-group">
+                <input type="hidden" name="ID" id="ID" placeholder="Id" value="<?=$data['pelanggan']["ID"];?>"/>
+            </div>
+            <div class="form-group">
                 <label for="">Nama</label><br>
-                <input type="text" name="nama" id="nama" placeholder="Nama" value="<?=$data["nama"];?>"/>
+                <input type="text" name="nama" id="nama" placeholder="Nama" value="<?=$data['pelanggan']["nama"];?>"/>
             </div>
             <div class="form-group">
                 <label for="">Username</label><br>
-                <input type="text" name="username" id="username" placeholder="Username" value="<?=$data["username"];?>"/>
+                <input type="text" name="username" id="username" placeholder="Username" value="<?=$data['pelanggan']["username"];?>"/>
             </div>
             <div class="form-group">
                 <label for="">Password</label><br>
-                <input type="password" name="password" id="password" placeholder="Password" value="<?=$data["password"];?>"/>
+                <input type="password" name="password" id="password" placeholder="Password" value="<?=$data['pelanggan']["password"];?>"/>
             </div>
             <button type="submit" name="submit" class="btn bg-primary text-white">Edit</button>
             <button type="reset" class="btn btn-danger">Reset</button>

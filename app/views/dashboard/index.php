@@ -42,7 +42,9 @@
                     <!-- Basic Card Example -->
                         <div class="card shadow mb-4 d-flex">
                                 <div class="card-header py-3">
-                                    <h6 class="m-0 font-weight-bold text-primary"><?=$kelas['image'] ?></h6>
+                                    <h6 class="m-0 font-weight-bold text-primary">
+                                        <?php echo '<img style="width:100%;" src="data:image/jpeg;base64,'.base64_encode( $kelas['image'] ).'"/>'?>
+                                    </h6>
                                 </div>
                                 <div class="card-body">
                                     <b><?=$kelas['judulKelas'] ?></b>

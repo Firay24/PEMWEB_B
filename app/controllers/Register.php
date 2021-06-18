@@ -9,19 +9,19 @@ class Register extends Controller{
         $this->view('templates/footer');
     }
 
-    public function register()
+    public function proses_register()
     {
         if ($_POST['password'] != $_POST['re_pass'])
         {
             Flasher::setFlash('Konfirmasi Password', 'Tidak Sama', 'danger');
-            header("Location: " . BASEURL . "/Register/index");
+            header("location: " . BASEURL . "/Register/index");
             exit;
         }
 
         if ($this->model('Akun_model')->addAkun($_POST) > 0)
         {
             Flasher::setFlash('Register', 'Berhasil', 'success');
-            header("Location: " . BASEURL . "/Login/index");
+            header("Location: " . BASEURL . "/Login");
             exit;
         }
     }

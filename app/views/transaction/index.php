@@ -31,7 +31,7 @@
                                     <td><?= $class['kelas']; ?></td>
                                     <td><?= $class['harga']; ?></td>
                                     <td><?= $class['waktu']; ?></td>
-                                    <?php if($class['ket']=='Bayar') :?>
+                                    <?php if($class['ket']=='bayar') :?>
                                         <td><a href="" class="badge badge-warning"><?= $class['ket']; ?></a></td>
                                     <?php else: ?>
                                         <td><a href="" class="badge badge-success"><?= $class['ket']; ?></a></td>
@@ -39,4 +39,6 @@
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
-</div>
+
+                    </table>
+                </div>

@@ -1,13 +1,8 @@
 <?php
 
-class Transaction_model{
+class transaction_model extends Controller{
     private $table = 'transaksi';
     private $db;
-
-    public function __construct()
-    {
-        $this->db = new Database;
-    }
 
     private $class = [
         [
@@ -23,6 +18,11 @@ class Transaction_model{
             'ket' => 'lunas'
         ]
     ];
+
+    public function __construct()
+    {
+        $this->db = new Database;
+    }
 
     public function getAll() {
         return $this->class;

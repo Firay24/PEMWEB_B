@@ -28,7 +28,7 @@
                             <input type="password" name="re_pass" id="re_pass" placeholder="Konfirmasi password"/>
                         </div>
                         <div class="form-group">
-                            <a href="<?= BASEURL; ?>" class="signup-image-link" style="font-size:13px;">I am already member</a>
+                            <a href="<?= BASEURL; ?>/index" class="signup-image-link" style="font-size:13px;">I am already member</a>
                         </div>
                         <div class="form-group form-button">
                             <button type="submit" name="signup" id="signup" class="form-submit" style="background-color:black;font-family:Poppins;">

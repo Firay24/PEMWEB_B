@@ -21,7 +21,7 @@ class Register extends Controller{
         if ($this->model('Akun_model')->addAkun($_POST) > 0)
         {
             Flasher::setFlash('Register', 'Berhasil', 'success');
-            header("Location: " . BASEURL . "/Login");
+            header("Location: " . BASEURL . "/index");
             exit;
         }
     }

@@ -14,12 +14,6 @@ class Akun_model{
         $this->db->query("SELECT * FROM {$this->table} WHERE username=:username");
         $this->db->bind('username', $username);
         return $this->db->single();
-        // $query = "SELECT * FROM pelanggan WHERE username=:username and password=:password";
-        // $this->db->query($query);
-        // $this->db->bind('username', $username);
-        // $this->db->bind('password', $password);
-        // $data = $this->db->single();
-        // return $data;
     }
 
     public function addAkun($data)
@@ -29,7 +23,6 @@ class Akun_model{
         $this->db->bind('nama', $data['nama']);
         $this->db->bind('username', $data['username']);
         $this->db->bind('password', $data['password']);
-        // return $this->db->single();
         $this->db->execute();
         return $this->db->rowCount();
     }

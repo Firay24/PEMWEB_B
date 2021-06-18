@@ -4,7 +4,7 @@ class Logout extends Controller{
     public function logout()
     {
         unset($_SESSION['username']);
-        header("Location: " . BASEURL);
+        header("Location: " . BASEURL . "/index");
         exit;
     }
 }

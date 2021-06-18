@@ -15,7 +15,9 @@
                 <h6 class="m-0 font-weight-bold text-primary">Transaction History</h6>
             </div>
             <div class="card-body">
-                <a class="btn btn-primary mb-3" href="<?= BASEURL; ?>/dashboard" role="button">Tambah kelas</a>
+                <div>
+                    <a class="btn btn-primary mb-3" href="<?= BASEURL; ?>/dashboard" role="button">Tambah kelas</a>
+                </div>
                 <div class="table-responsive">
                     <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                         <thead>
@@ -33,13 +35,33 @@
                                     <td><?= $class['Total']; ?></td>
                                     <td><?= $class['Waktu']; ?></td>
                                     <?php if($class['Keterangan']=='Bayar') :?>
-                                        <td><a href="" class="badge badge-warning"><?= $class['Keterangan']; ?></a></td>
+                                        <td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#ModalBayar"><?= $class['Keterangan']; ?></button></td>
                                     <?php else: ?>
-                                        <td><a href="" class="badge badge-success"><?= $class['Keterangan']; ?></a></td>
+                                        <td><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#exampleModal"><?= $class['Keterangan']; ?></button></td>
                                     <?php endif ?>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
-
                     </table>
+                </div>
+
+                <!-- Modal bayar -->
+                <div class="modal fade" id="ModalBayar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Informasi</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Terima Kasih Anda Sudah Membayar Kelas Ini</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-primary">BELAJAR SEKARANG</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">OK</button>
+                        </div>
+                        </div>
+                    </div>
                 </div>

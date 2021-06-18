@@ -37,7 +37,7 @@
                                     <?php if($class['Keterangan']=='Bayar') :?>
                                         <td><button type="button" class="btn btn-warning btn-sm" data-toggle="modal" data-target="#ModalBayar"><?= $class['Keterangan']; ?></button></td>
                                     <?php else: ?>
-                                        <td><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#exampleModal"><?= $class['Keterangan']; ?></button></td>
+                                        <td><button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#ModalLunas"><?= $class['Keterangan']; ?></button></td>
                                     <?php endif ?>
                                 </tr>
                             <?php endforeach; ?>
@@ -45,8 +45,8 @@
                     </table>
                 </div>
 
-                <!-- Modal bayar -->
-                <div class="modal fade" id="ModalBayar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <!-- Modal lunas -->
+                <div class="modal fade" id="ModalLunas" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                     <div class="modal-dialog">
                         <div class="modal-content">
                         <div class="modal-header">
@@ -61,6 +61,27 @@
                         <div class="modal-footer">
                             <button type="button" class="btn btn-outline-primary">BELAJAR SEKARANG</button>
                             <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">OK</button>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal bayar -->
+                <div class="modal fade" id="ModalBayar" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Informasi</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Apakah Anda Ingin Membatalkan Transaksi</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-outline-primary">OK</button>
+                            <button type="button" class="btn btn-primary" data-dismiss="modal" aria-label="Close">BATAL</button>
                         </div>
                         </div>
                     </div>

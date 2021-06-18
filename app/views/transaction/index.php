@@ -28,10 +28,10 @@
                         <tbody>
                             <?php foreach($data['class'] as $class) : ?>
                                 <tr>
-                                    <td><?= $class['kelas']; ?></td>
-                                    <td><?= $class['harga']; ?></td>
-                                    <td><?= $class['waktu']; ?></td>
-                                    <?php if($class['ket']=='bayar') :?>
+                                    <td><?= $class['IDKelas']; ?></td>
+                                    <td><?= $class['Total']; ?></td>
+                                    <td><?= $class['Waktu']; ?></td>
+                                    <?php if($class['Keterangan']=='bayar') :?>
                                         <td><a href="" class="badge badge-warning"><?= $class['ket']; ?></a></td>
                                     <?php else: ?>
                                         <td><a href="" class="badge badge-success"><?= $class['ket']; ?></a></td>

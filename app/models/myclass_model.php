@@ -10,7 +10,7 @@ class myclass_model extends Controller{
     }
 
     public function getAll() {
-        $this->db->query("SELECT judulKelas FROM transaksi INNER JOIN kelas ON transaksi.IDKelas=kelas.ID WHERE transaksi.keterangan='Bayar'");
+        $this->db->query("SELECT judulKelas FROM transaksi INNER JOIN kelas ON transaksi.IDKelas=kelas.ID WHERE transaksi.keterangan='Lunas'");
         return $this->db->resultSet();
     }
     
